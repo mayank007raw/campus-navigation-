@@ -1,0 +1,10 @@
+# Runtime dependencies: none.
+# This project uses only the Python standard library (3.10+):
+#   argparse, heapq, collections, dataclasses, difflib, html, json, math
+#
+# Development only:
+pytest>=7.4
+
+# Optional, only if you want to rasterise the generated SVGs to PNG
+# (this is how the two rendering bugs in DECISIONS.md #6 were found):
+# cairosvg>=2.7

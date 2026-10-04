@@ -1,0 +1,145 @@
+<!--
+  ARCHIVED: the original, REJECTED map from the first commit (ff18d3a).
+
+  This campus was invented by an AI assistant: 14 plausible-sounding
+  buildings, made-up coordinates, made-up distances - while carrying the
+  name of a real institution ("USAR Building"). Nobody could verify any of
+  it, and anyone who knows the campus would spot the fiction immediately.
+
+  It is kept here as a record of the mistake, and as the "before" half of
+  docs/compare-original-vs-real.html. Do not use it as a campus.
+
+  The shipped campus is campuses/usar-east-campus.json.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-67.5 -68.0 420.0 464.0" width="420" height="464" role="img" aria-label="Campus Navigation System">
+<rect x="-67.5" y="-68.0" width="420.0" height="464.0" fill="#ffffff"/>
+<g id="edges">
+<g stroke-linecap="round">
+<line x1="0.0" y1="0.0" x2="70.0" y2="55.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="0.0" y1="0.0" x2="35.0" y2="115.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="70.0" y1="55.0" x2="35.0" y2="115.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="70.0" y1="55.0" x2="130.0" y2="145.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="70.0" y1="55.0" x2="255.0" y2="55.0" stroke="#d9c9a3" stroke-width="6" stroke-dasharray="7 6"/>
+<line x1="35.0" y1="115.0" x2="45.0" y2="205.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="35.0" y1="115.0" x2="130.0" y2="145.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="130.0" y1="145.0" x2="205.0" y2="110.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="130.0" y1="145.0" x2="175.0" y2="235.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="130.0" y1="145.0" x2="115.0" y2="255.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="205.0" y1="110.0" x2="255.0" y2="55.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="205.0" y1="110.0" x2="235.0" y2="185.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="45.0" y1="205.0" x2="115.0" y2="255.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="45.0" y1="205.0" x2="60.0" y2="305.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="115.0" y1="255.0" x2="175.0" y2="235.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="115.0" y1="255.0" x2="60.0" y2="305.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="115.0" y1="255.0" x2="175.0" y2="330.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="175.0" y1="235.0" x2="235.0" y2="185.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="175.0" y1="235.0" x2="175.0" y2="330.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="235.0" y1="185.0" x2="255.0" y2="55.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="235.0" y1="185.0" x2="255.0" y2="250.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="255.0" y1="250.0" x2="285.0" y2="310.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="175.0" y1="330.0" x2="285.0" y2="310.0" stroke="#bdc1c6" stroke-width="4"/>
+<line x1="60.0" y1="305.0" x2="255.0" y2="250.0" stroke="#d9c9a3" stroke-width="6" stroke-dasharray="7 6"/>
+<line x1="255.0" y1="55.0" x2="115.0" y2="255.0" stroke="#d9c9a3" stroke-width="6" stroke-dasharray="7 6"/>
+<line x1="60.0" y1="305.0" x2="175.0" y2="235.0" stroke="#d9c9a3" stroke-width="6" stroke-dasharray="7 6"/>
+</g>
+<text x="40.6" y="23.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">90</text>
+<text x="40.6" y="23.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">90</text>
+<text x="26.1" y="58.1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">120</text>
+<text x="26.1" y="58.1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">120</text>
+<text x="44.7" y="83.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">70</text>
+<text x="44.7" y="83.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">70</text>
+<text x="107.5" y="98.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">110</text>
+<text x="107.5" y="98.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">110</text>
+<text x="162.5" y="49.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">185</text>
+<text x="162.5" y="49.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">185</text>
+<text x="48.9" y="162.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">90</text>
+<text x="48.9" y="162.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">90</text>
+<text x="85.2" y="124.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">100</text>
+<text x="85.2" y="124.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">100</text>
+<text x="163.7" y="122.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">85</text>
+<text x="163.7" y="122.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">85</text>
+<text x="160.5" y="189.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">100</text>
+<text x="160.5" y="189.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">100</text>
+<text x="113.6" y="202.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">110</text>
+<text x="113.6" y="202.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">110</text>
+<text x="223.3" y="79.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">75</text>
+<text x="223.3" y="79.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">75</text>
+<text x="228.4" y="147.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">80</text>
+<text x="228.4" y="147.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">80</text>
+<text x="85.2" y="225.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">85</text>
+<text x="85.2" y="225.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">85</text>
+<text x="61.4" y="256.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">100</text>
+<text x="61.4" y="256.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">100</text>
+<text x="142.2" y="239.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">65</text>
+<text x="142.2" y="239.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">65</text>
+<text x="81.4" y="276.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">75</text>
+<text x="81.4" y="276.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">75</text>
+<text x="152.0" y="290.1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">95</text>
+<text x="152.0" y="290.1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">95</text>
+<text x="199.2" y="206.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">80</text>
+<text x="199.2" y="206.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">80</text>
+<text x="166.0" y="285.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">95</text>
+<text x="166.0" y="285.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">95</text>
+<text x="236.1" y="121.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">130</text>
+<text x="236.1" y="121.8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">130</text>
+<text x="253.6" y="218.1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">70</text>
+<text x="253.6" y="218.1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">70</text>
+<text x="278.0" y="279.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">65</text>
+<text x="278.0" y="279.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">65</text>
+<text x="228.4" y="314.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">110</text>
+<text x="228.4" y="314.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">110</text>
+<text x="155.1" y="272.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">205</text>
+<text x="155.1" y="272.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">205</text>
+<text x="177.6" y="153.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">420</text>
+<text x="177.6" y="153.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">420</text>
+<text x="112.8" y="265.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round">260</text>
+<text x="112.8" y="265.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle" fill="#9aa0a6">260</text>
+</g>
+<g id="nodes">
+<circle cx="0.0" cy="0.0" r="8.5" fill="#fff" stroke="#5f6368" stroke-width="3.5"/>
+<circle cx="70.0" cy="55.0" r="8.5" fill="#fff" stroke="#1a73e8" stroke-width="3.5"/>
+<circle cx="35.0" cy="115.0" r="8.5" fill="#fff" stroke="#e37400" stroke-width="3.5"/>
+<circle cx="205.0" cy="110.0" r="8.5" fill="#fff" stroke="#1a73e8" stroke-width="3.5"/>
+<circle cx="130.0" cy="145.0" r="8.5" fill="#fff" stroke="#1a73e8" stroke-width="3.5"/>
+<circle cx="255.0" cy="55.0" r="8.5" fill="#fff" stroke="#0f9d58" stroke-width="3.5"/>
+<circle cx="45.0" cy="205.0" r="8.5" fill="#fff" stroke="#1a73e8" stroke-width="3.5"/>
+<circle cx="235.0" cy="185.0" r="8.5" fill="#fff" stroke="#e37400" stroke-width="3.5"/>
+<circle cx="115.0" cy="255.0" r="8.5" fill="#fff" stroke="#1a73e8" stroke-width="3.5"/>
+<circle cx="175.0" cy="235.0" r="8.5" fill="#fff" stroke="#1a73e8" stroke-width="3.5"/>
+<circle cx="255.0" cy="250.0" r="8.5" fill="#fff" stroke="#e37400" stroke-width="3.5"/>
+<circle cx="60.0" cy="305.0" r="8.5" fill="#fff" stroke="#a142f4" stroke-width="3.5"/>
+<circle cx="175.0" cy="330.0" r="8.5" fill="#fff" stroke="#a142f4" stroke-width="3.5"/>
+<circle cx="285.0" cy="310.0" r="8.5" fill="#fff" stroke="#d93025" stroke-width="3.5"/>
+<text x="0.0" y="-15.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Main Gate</text>
+<text x="0.0" y="-15.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Main Gate</text>
+<text x="70.0" y="39.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Administrative Block</text>
+<text x="70.0" y="39.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Administrative Block</text>
+<text x="35.0" y="99.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Canteen</text>
+<text x="35.0" y="99.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Canteen</text>
+<text x="205.0" y="94.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Block A</text>
+<text x="205.0" y="94.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Block A</text>
+<text x="130.0" y="129.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">USAR Building</text>
+<text x="130.0" y="129.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">USAR Building</text>
+<text x="255.0" y="39.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Sports Complex</text>
+<text x="255.0" y="39.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Sports Complex</text>
+<text x="45.0" y="189.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Block B</text>
+<text x="45.0" y="189.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Block B</text>
+<text x="235.0" y="169.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Auditorium</text>
+<text x="235.0" y="169.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Auditorium</text>
+<text x="115.0" y="239.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Central Library</text>
+<text x="115.0" y="239.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Central Library</text>
+<text x="175.0" y="219.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Block C</text>
+<text x="175.0" y="219.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Block C</text>
+<text x="255.0" y="234.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Health Centre</text>
+<text x="255.0" y="234.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Health Centre</text>
+<text x="60.0" y="289.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Boys&#x27; Hostel</text>
+<text x="60.0" y="289.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Boys&#x27; Hostel</text>
+<text x="175.0" y="314.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Girls&#x27; Hostel</text>
+<text x="175.0" y="314.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Girls&#x27; Hostel</text>
+<text x="285.0" y="294.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="none" stroke="#fff" stroke-width="3.4" stroke-linejoin="round">Metro Station</text>
+<text x="285.0" y="294.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" fill="#202124">Metro Station</text>
+</g>
+<text x="-55.5" y="-38.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start" fill="#202124">Campus Navigation System</text>
+<text x="-55.5" y="368.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#9aa0a6">Campus graph: 14 locations, 26 pathways, 285 m x 330</text>
+<text x="-55.5" y="385.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#9aa0a6">m. Numbers on pathways are metres.</text>
+</svg>

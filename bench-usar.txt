@@ -1,0 +1,105 @@
+campus: USAR East Campus, GGSIPU (from screenshot + OpenStreetMap)
+==========================================================================
+CAMPUS DATASET
+==========================================================================
+USAR East Campus, GGSIPU (from screenshot + OpenStreetMap)
+Schematic layout traced from a Google Maps satellite view of the USAR campus, Surajmal Vihar. Building coordinates are OpenStreetMap; roads and grounds are measured from the screenshot to about +/-10 m. This is not a survey - check the positions against the campus.
+
+12 locations, 18 pathways
+
+edge                        weight  kind     derived?
+--------------------------------------------------------------------------
+Gate 2 - Block A (USAR)                     150  walkway  map distance
+Gate 2 - Block B (USDI)                     150  walkway  map distance
+Block A (USAR) - Library (C-Block)           60  walkway  map distance
+Library (C-Block) - Block B (USDI)           50  walkway  map distance
+Block B (USDI) - Canteen (D-Block)           45  walkway  map distance
+Canteen (D-Block) - Sports Hall              45  walkway  map distance
+Library (C-Block) - Sports Hall             115  walkway  map distance
+Gate 2 - Sports Hall                        100  walkway  map distance
+Gate 1 - Parking                            165  walkway  map distance
+Parking - Block A (USAR)                    165  walkway  map distance
+Gate 1 - Auditorium                         110  walkway  map distance
+Block A (USAR) - Auditorium                 245  walkway  map distance
+Sports Hall - Outdoor Ground                 75  walkway  map distance
+Sports Hall - Boys Hostel                   115  walkway  map distance
+Outdoor Ground - Girls' Hostel              115  walkway  map distance
+Boys Hostel - Girls' Hostel                  70  walkway  map distance
+Block A (USAR) - Boys Hostel                225  walkway  map distance
+Block A (USAR) - Sports Hall                160  walkway  map distance
+
+==========================================================================
+EXPERIMENT 1 - search effort over all origin/destination pairs
+==========================================================================
+pairs tested: 66   (V=12, E=18, undirected)
+
+algorithm     avg expanded  max expanded     avg ms
+---------------------------------------------------
+BFS                   7.38            12      0.006
+Dijkstra              6.83            12      0.008
+A*                    3.62             9      0.010
+
+A* expanded 3.21 fewer nodes per query than Dijkstra (47.0% less search) for identical answers.
+
+pairs where BFS and Dijkstra return different routes:
+  Block A (USAR) -> Canteen (D-Block)
+      BFS      2 hops, 205 m: Block A (USAR) -> Sports Hall -> Canteen (D-Block)
+      Dijkstra 3 hops, 155 m: Block A (USAR) -> Library (C-Block) -> Block B (USDI) -> Canteen (D-Block)
+  Block A (USAR) -> Block B (USDI)
+      BFS      2 hops, 300 m: Block A (USAR) -> Gate 2 -> Block B (USDI)
+      Dijkstra 2 hops, 110 m: Block A (USAR) -> Library (C-Block) -> Block B (USDI)
+  Auditorium -> Canteen (D-Block)
+      BFS      3 hops, 450 m: Auditorium -> Block A (USAR) -> Sports Hall -> Canteen (D-Block)
+      Dijkstra 4 hops, 400 m: Auditorium -> Block A (USAR) -> Library (C-Block) -> Block B (USDI) -> Canteen (D-Block)
+  Auditorium -> Block B (USDI)
+      BFS      3 hops, 545 m: Auditorium -> Block A (USAR) -> Gate 2 -> Block B (USDI)
+      Dijkstra 3 hops, 355 m: Auditorium -> Block A (USAR) -> Library (C-Block) -> Block B (USDI)
+  Boys Hostel -> Outdoor Ground
+      BFS      2 hops, 190 m: Boys Hostel -> Sports Hall -> Outdoor Ground
+      Dijkstra 2 hops, 185 m: Boys Hostel -> Girls' Hostel -> Outdoor Ground
+  Sports Hall -> Girls' Hostel
+      BFS      2 hops, 190 m: Sports Hall -> Outdoor Ground -> Girls' Hostel
+      Dijkstra 2 hops, 185 m: Sports Hall -> Boys Hostel -> Girls' Hostel
+  ... 17 of 66 pairs (26%) differ
+
+==========================================================================
+EXPERIMENT 2 - scaling: 40-node random campus -> 900-node grid
+==========================================================================
+
+2a. Random campus graphs (scattered buildings, 2 nearest neighbours each)
+    Corner-ish pair: the two nodes furthest apart. Percentages are of V.
+
+     V      E     BFS exp   Dijkstra exp      A* exp   A* vs Dij
+----------------------------------------------------------------
+    40     57     26 ( 65%)      26 ( 65%)     22 ( 55%)        15%
+    80    113     27 ( 34%)      73 ( 91%)     48 ( 60%)        34%
+   160    229     48 ( 30%)      91 ( 57%)     43 ( 27%)        53%
+   320    457    164 ( 51%)     291 ( 91%)    175 ( 55%)        40%
+   640    932    199 ( 31%)     563 ( 88%)    260 ( 41%)        54%
+
+2b. Uniform k x k grid, corner to opposite corner
+    Every edge costs the same, so this is BFS's best case. Note that
+    Euclidean distance is a WEAK heuristic on a 4-connected grid
+    (Manhattan distance would be exact), so A* prunes little here.
+
+     V      E     BFS exp   Dijkstra exp      A* exp   A* vs Dij
+----------------------------------------------------------------
+   100    180    100 (100%)     100 (100%)    100 (100%)         0%
+   400    760    400 (100%)     400 (100%)    400 (100%)         0%
+   900   1740    900 (100%)     900 (100%)    900 (100%)         0%
+
+==========================================================================
+EXPERIMENT 3 - hop-optimal vs distance-optimal
+==========================================================================
+pairs where the fewest-hop route is also the shortest: 49
+pairs where the fewest-hop route walks further:          17
+
+worst case: Block B (USDI) -> Girls' Hostel
+  fewest hops : 595 m
+  shortest    : 275 m  (320 m / 116% less)
+
+conclusion: on a weighted campus graph, minimising turns and
+minimising metres are different objectives. Dijkstra is the
+correct algorithm for walking distance; BFS is used for the
+unweighted comparison the task asks for.
+

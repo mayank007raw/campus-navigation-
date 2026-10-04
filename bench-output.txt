@@ -1,0 +1,113 @@
+campus: Sample Campus (synthetic)
+==========================================================================
+CAMPUS DATASET
+==========================================================================
+Sample Campus (synthetic)
+Illustrative dataset created for this task. The locations and distances are invented, not surveyed.
+
+14 locations, 26 pathways
+
+edge                        weight  kind     derived?
+--------------------------------------------------------------------------
+Main Gate - Administrative Block             90  walkway  map distance
+Main Gate - Canteen                         120  walkway  map distance
+Administrative Block - Canteen               70  walkway  map distance
+Administrative Block - Science Block        110  walkway  map distance
+Administrative Block - Sports Complex       185  road     map distance
+Canteen - Block B                            90  walkway  map distance
+Canteen - Science Block                     100  walkway  map distance
+Science Block - Block A                      85  walkway  map distance
+Science Block - Block C                     100  walkway  map distance
+Science Block - Central Library             110  walkway  map distance
+Block A - Sports Complex                     75  walkway  map distance
+Block A - Auditorium                         80  walkway  map distance
+Block B - Central Library                    85  walkway  map distance
+Block B - Boys' Hostel                      100  walkway  map distance
+Central Library - Block C                    65  walkway  map distance
+Central Library - Boys' Hostel               75  walkway  map distance
+Central Library - Girls' Hostel              95  walkway  map distance
+Block C - Auditorium                         80  walkway  map distance
+Block C - Girls' Hostel                      95  walkway  map distance
+Auditorium - Sports Complex                 130  walkway  map distance
+Auditorium - Health Centre                   70  walkway  map distance
+Health Centre - Metro Station                65  walkway  map distance
+Girls' Hostel - Metro Station               110  walkway  map distance
+Boys' Hostel - Health Centre                205  road     map distance
+Sports Complex - Central Library            420  road     override (map 245 m) - perimeter service road around the sports field
+Boys' Hostel - Block C                      260  road     override (map 135 m) - sports field is directly in the way
+
+==========================================================================
+EXPERIMENT 1 - search effort over all origin/destination pairs
+==========================================================================
+pairs tested: 91   (V=14, E=26, undirected)
+
+algorithm     avg expanded  max expanded     avg ms
+---------------------------------------------------
+BFS                   8.49            14      0.007
+Dijkstra              7.91            14      0.010
+A*                    3.80            12      0.010
+
+A* expanded 4.11 fewer nodes per query than Dijkstra (51.9% less search) for identical answers.
+
+pairs where BFS and Dijkstra return different routes:
+  Main Gate -> Auditorium
+      BFS      3 hops, 405 m: Main Gate -> Administrative Block -> Sports Complex -> Auditorium
+      Dijkstra 4 hops, 365 m: Main Gate -> Administrative Block -> Science Block -> Block A -> Auditorium
+  Main Gate -> Central Library
+      BFS      3 hops, 310 m: Main Gate -> Administrative Block -> Science Block -> Central Library
+      Dijkstra 3 hops, 295 m: Main Gate -> Canteen -> Block B -> Central Library
+  Main Gate -> Health Centre
+      BFS      4 hops, 475 m: Main Gate -> Administrative Block -> Sports Complex -> Auditorium -> Health Centre
+      Dijkstra 5 hops, 435 m: Main Gate -> Administrative Block -> Science Block -> Block A -> Auditorium -> Health Centre
+  Main Gate -> Girls' Hostel
+      BFS      4 hops, 395 m: Main Gate -> Administrative Block -> Science Block -> Block C -> Girls' Hostel
+      Dijkstra 4 hops, 390 m: Main Gate -> Canteen -> Block B -> Central Library -> Girls' Hostel
+  Main Gate -> Metro Station
+      BFS      5 hops, 505 m: Main Gate -> Administrative Block -> Science Block -> Block C -> Girls' Hostel -> Metro Station
+      Dijkstra 5 hops, 500 m: Main Gate -> Canteen -> Block B -> Central Library -> Girls' Hostel -> Metro Station
+  Administrative Block -> Auditorium
+      BFS      2 hops, 315 m: Administrative Block -> Sports Complex -> Auditorium
+      Dijkstra 3 hops, 275 m: Administrative Block -> Science Block -> Block A -> Auditorium
+  ... 24 of 91 pairs (26%) differ
+
+==========================================================================
+EXPERIMENT 2 - scaling: 40-node random campus -> 900-node grid
+==========================================================================
+
+2a. Random campus graphs (scattered buildings, 2 nearest neighbours each)
+    Corner-ish pair: the two nodes furthest apart. Percentages are of V.
+
+     V      E     BFS exp   Dijkstra exp      A* exp   A* vs Dij
+----------------------------------------------------------------
+    40     57     26 ( 65%)      26 ( 65%)     22 ( 55%)        15%
+    80    113     27 ( 34%)      73 ( 91%)     48 ( 60%)        34%
+   160    229     48 ( 30%)      91 ( 57%)     43 ( 27%)        53%
+   320    457    164 ( 51%)     291 ( 91%)    175 ( 55%)        40%
+   640    932    199 ( 31%)     563 ( 88%)    260 ( 41%)        54%
+
+2b. Uniform k x k grid, corner to opposite corner
+    Every edge costs the same, so this is BFS's best case. Note that
+    Euclidean distance is a WEAK heuristic on a 4-connected grid
+    (Manhattan distance would be exact), so A* prunes little here.
+
+     V      E     BFS exp   Dijkstra exp      A* exp   A* vs Dij
+----------------------------------------------------------------
+   100    180    100 (100%)     100 (100%)    100 (100%)         0%
+   400    760    400 (100%)     400 (100%)    400 (100%)         0%
+   900   1740    900 (100%)     900 (100%)    900 (100%)         0%
+
+==========================================================================
+EXPERIMENT 3 - hop-optimal vs distance-optimal
+==========================================================================
+pairs where the fewest-hop route is also the shortest: 67
+pairs where the fewest-hop route walks further:          24
+
+worst case: Sports Complex -> Girls' Hostel
+  fewest hops : 515 m
+  shortest    : 305 m  (210 m / 69% less)
+
+conclusion: on a weighted campus graph, minimising turns and
+minimising metres are different objectives. Dijkstra is the
+correct algorithm for walking distance; BFS is used for the
+unweighted comparison the task asks for.
+

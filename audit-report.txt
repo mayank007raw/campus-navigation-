@@ -1,0 +1,78 @@
+========================================================================
+MAP AUDIT - USAR East Campus, GGSIPU (from screenshot + OpenStreetMap)
+========================================================================
+
+SHAPE
+  12 locations, 18 pathways, connected: True
+  extent 530 m x 312 m
+  PASS  the campus is one connected map
+  PASS  no location is isolated
+
+SOURCES - nothing on this map is invented
+  {'osm': 4, 'described': 7, 'screenshot': 1}
+  PASS  every location declares a source
+  PASS  the four OSM blocks kept their surveyed coordinates
+
+CORRECTION 1-2  two gates; the auditorium gate leads to Block A
+  PASS  Gate 1 is next to the Auditorium
+          110 m
+  PASS  Gate 1's route to Block A runs past the Parking (correction 11)
+
+CORRECTION 3  the park is not on the campus
+  PASS  no park node in the graph
+
+CORRECTION 5  entering Gate 2: left is Block A, right is Block B
+  PASS  Block A is on the LEFT
+          cross = -4587
+  PASS  Block B is on the RIGHT
+          cross = +8586
+  PASS  both blocks are a short walk from the gate
+
+CORRECTION 8  Block A -> Block B goes past the Library (110 m)
+  PASS  the shortest walk is Block A -> Library -> Block B
+          block_a -> library -> block_b
+  PASS  the chain is 110 m
+          110 m
+  PASS  Block B is one building, not a hub
+          degree 3
+
+CORRECTION 9  three buildings off the map, hostels behind the sports pair
+  PASS  teachers_hostel is not plotted
+  PASS  block_1 is not plotted
+  PASS  block_2 is not plotted
+  PASS  ...but the raw OSM record still has them
+  PASS  Boys Hostel is behind the Sports Hall
+  PASS  Girls' Hostel is behind the Outdoor Ground
+
+CORRECTION 10  sports side by side, Gate 2 in the gap
+  PASS  Sports Hall and Outdoor Ground share a row
+  PASS  ...and sit 60-100 m apart
+          74 m
+
+CORRECTION 11  Gate 2 shifted out; Parking and Canteen on their routes
+  PASS  Parking is mid-way on Gate 1 -> Block A
+  PASS  Block B -> Canteen -> Sports Hall is the way through
+
+CORRECTION 12  USAR Ground off the map
+  PASS  no USAR Ground location
+
+CORRECTION 13  the block letters, each with quoted evidence
+  PASS  A-Block is documented
+          A-Block - 'the first block is our USAR, which we call A-Block'
+  PASS  B-Block is documented
+          B-Block - 'B-Block is for USDI, which is the design block'
+  PASS  C-Block is documented
+          C-Block - 'the third block is our C-Block, which is the library'
+  PASS  D-Block is documented
+          D-Block - 'D-Block is our canteen', and 'our canteen is downstai
+
+THE ROUTES THAT MATTER
+  Gate 1               -> Block A (USAR)         330 m  via Parking
+  Gate 2               -> Block A (USAR)         150 m  via direct
+  Block A (USAR)       -> Block B (USDI)         110 m  via Library (C-Block)
+  Block B (USDI)       -> Sports Hall             90 m  via Canteen (D-Block)
+  Gate 1               -> Girls' Hostel          625 m  via Parking / Block A (USAR) / Boys Hostel
+  Auditorium           -> Canteen (D-Block)      400 m  via Block A (USAR) / Library (C-Block) / Block B (USDI)
+
+========================================================================
+every correction the student made still holds in the shipped map
